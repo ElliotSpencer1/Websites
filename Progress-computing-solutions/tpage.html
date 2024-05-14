@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Progress computing solutions / Teacher </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <button class="button" onclick="window.location.href='index.html';"> Home </button>
+    <!-- Write a back for pages which have pages before home -->
+  </div>
+  <div class="maintag">
+    Teacher Portal
+  </div>
+  <div class="buttonbox3">
+    <button type="button" onclick="window.location.href = 'studentresults.html'"> Results </button>
+  </div>
+    <script src="script.js"></script>
+    <script>
+      var TeacherName = localStorage.getItem("tname"); // Retrieve the tname value from localStorage
+      console.log(TeacherName);
+    </script>
+</body>
+
+</html>

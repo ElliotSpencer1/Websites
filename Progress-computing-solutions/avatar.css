@@ -1,0 +1,101 @@
+
+.bodytexterino{
+  color: white;
+}
+
+
+.avatar-container {
+    display: flex;
+    float: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    max-width: 600px;
+    max-height: 600px;
+    position: relative;
+}
+
+.avatar-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.avatar-option {
+    cursor: pointer;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px; 
+}
+
+.avatar-option img {
+    width: 100px;
+    height: 100px;
+    max-width: 200px; /* Set the default maximum width */
+}
+
+.equipped-accessory {
+    position: absolute;
+    max-width: 50px; /* Set the maximum width for equipped accessories */
+}
+
+/* Accessory positioning */
+.equipped-accessory.head{
+    top: -20px;
+    left: -20px;
+}
+
+
+.equipped-accessory.eyes {
+    top: 25%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.equipped-accessory.mouth {
+    bottom: 20%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+/* Media queries for different screen resolutions */
+@media screen and (max-width: 1080px) and (max-height: 1800px) {
+    .avatar-option img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) and (max-height: 300px) {
+    .avatar-option img {
+        max-width: 100px;
+    }
+}
+
+/* Media queries for different screen resolutions */
+@media screen and (max-width: 1080px) and (max-height: 1800px) {
+    .avatar-container img {
+        max-width: 246px;
+    }
+}
+
+@media screen and (max-width: 900px) and (max-height: 300px) {
+    .avatar-container img {
+        max-width: 246px;
+    }
+}
+
+.avatar{
+  display: flex;
+  float: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 20px;
+  max-width: 600px;
+  max-height: 600px;
+  position: relative;
+}

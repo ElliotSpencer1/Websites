@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Timetrial test </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <img id="avatarImage" src="" alt="Avatar Image">
+    <button class="button" onclick="window.location.href='index.html';"> Home </button>
+    <!-- Write a back for pages which have pages before home -->
+  </div>
+  <div class="maintag">
+     Timetrial Results
+    <p id="timetrialoutput"> You scored, </p>
+  </div>
+  <br>  
+  <div class="buttonbox">
+    <button id="confettiButton" onclick="showTTresults()"> load results </button>
+    <br>
+    <button onclick="window.location.href = 'spage.html' "> Next </button>
+  </div>
+  <br>
+
+  <script>
+    var TimetrialScore = localStorage.getItem("ttscore"); // Retrieve the score value from localStorage
+    var TimetrialmaxScore = localStorage.getItem("ttmaxscore"); // Retrieve the maximum score value from localStorage
+    var Timeleft = localStorage.getItem("timeleft"); // Retrieve the timeleft value from localStorage
+  </script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0"></script>
+</body>
+
+</html>

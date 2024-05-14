@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Your Avatar</title>
+    <link href="style.css" rel="stylesheet" type="text/css" /> <!-- Updated CSS link -->
+    <link href="avatar.css" rel="stylesheet" type="text/css" /> <!-- Updated CSS link -->
+</head>
+
+<body>
+    <div class="topnav">
+        <button class="button" onclick="window.location.href='spage.html';">Back</button>
+        <button class="button" onclick="window.location.href='avatarinfo.html';">More
+          info</button>
+        <button class="button" onclick="Saveimage()"> Save </button>
+    </div>
+    <div class="avatar-container" id="avatarContainer">
+    </div>
+    <div class="shop-container">
+        <div class="avatar-options" id="avatarOptions">
+            <!-- Avatar options will be displayed here -->
+        </div>
+    </div>
+  <div class="buttonbox2">
+  <div class="image">
+    <img src="options/hat.png" alt="image of mineral water" onclick="cowboy()">
+    <img src="options/headphones.png" alt="image of black coffee" onclick="headphones()">
+  </div>
+  <div class="image">
+    <img src="options/glasses.png" alt="image of lemon with tea" onclick="sunglasses()">
+    <img src="options/crown.png" alt="image of sugar" onclick="crown()">
+  </div>
+    <div class="image">
+      <img src="options/bin.png" onclick="deleteAll()">
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1/lib/addons/p5.sound.min.js"></script>
+  <script src="https://p5play.org/v3/planck.min.js"></script>
+  <script src="https://p5play.org/v3/p5play.js"></script>
+  <script src="avatar.js"></script>  
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Memory test </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <button class="button" onclick="window.location.href='repetition.html';"> Back </button>
+  </div>
+  <div class="gametag">
+     Audio test
+  </div>
+  <br>  
+  <div class = "audiothing">
+    <audio controls>
+      <source src="audio/1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div class="buttonbox4">
+    <button id="recordButton">Record</button>
+    <button id="playButton" disabled>Play</button>
+    <button id="i"type="button" onclick="incorrect()" > incorrect </button>
+    <button id="c" type="button" onclick="correct()" > correct </button>
+    <button type="button" onclick="next()" > Next </button>
+  </div>
+  <div class="person">
+  <img src="images/1.png" alt="image of an object">
+  </div>
+  
+
+  <script src="audio.js"></script>
+</body>
+
+</html>

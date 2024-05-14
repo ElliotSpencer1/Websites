@@ -1,0 +1,355 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  background: linear-gradient(270deg, #62ddbd , #46cead, #73b1f4, #539cea);
+}
+
+.maintag{
+  font-family: Arial;
+  font-size: 4vw;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+.maintag p{
+  font-size: 2vw;
+}
+
+.gametag{
+  font-family: Arial;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5%;
+  color: #ffffff;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  font-weight: bold;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+}
+
+.buttonbox{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 2.5%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+
+.buttonbox button{
+  font-family: Arial;
+  font-size: 15px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid white;
+  width: fit-content;
+  height: 100%;
+  padding: 5px;
+  justify-content: space-between;
+  display: inline-block;
+  margin-bottom: 2.5%; /* Adjust the value as needed to create the desired gap below each button */
+  border-radius: 12px; /* this will make the button rounded */
+}
+
+
+/* New code starts here for buttons *
+/* Set up display flex for the buttonbox */
+.buttonbox3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the buttons */
+  align-items: center;
+}
+
+.buttonbox3 button {
+  width: 150px; /* Set the width to make the buttons more square */
+  height: 150px; /* Set the height to make the buttons more square */
+  margin: 10px; /* Add margin for spacing */
+  text-align: center;
+  line-height: 150px; /* Center the text vertically in the button */
+  font-size: 3vw; /* Set the font size to scale with the button size */
+  overflow: hidden; /* Prevent text from going outside the button */
+  white-space: nowrap;  /* Prevent text from wrapping */
+  font-family: Arial;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 12px; /* rounded buttons */
+}
+/* Set up specific positioning of the buttons for larger screens */
+.buttonbox3 button:nth-of-type(1) {
+  order: 1; /* top-left */
+}
+
+.buttonbox3 button:nth-of-type(2) {
+  order: 2; /* top-right */
+}
+
+.buttonbox3 button:nth-of-type(3) {
+  order: 3; /* bottom-left */
+}
+
+.buttonbox3 button:nth-of-type(4) {
+  order: 4; /* bottom-right */
+}
+
+@media (min-width: 768px) {
+  .buttonbox3 {
+    justify-content: space-between; /* Spread the buttons apart with space between */
+    margin-left: 10%; /* Set margin on the far left */
+    margin-right: 10%; /* Set margin on the far right */
+  }
+  .buttonbox3 button {
+    flex: 1 0 45%; /* Set the flex property to control the width of the buttons in the grid */
+  }
+}
+
+/* Media query to change the layout for smaller screens (e.g., mobile devices) */
+@media (max-width: 600px) {
+  .buttonbox3 {
+    flex-direction: column;
+  }
+
+  .buttonbox3 button {
+    flex-grow: 1;
+    margin: 5px;
+  }
+}
+
+
+
+.buttonbox3 button:hover{
+  background: white;
+  color: #000000;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buttonbox3 input{
+  margin-bottom: 5%
+} 
+
+/* New code ends here */
+
+
+.buttonbox button:hover{
+  background: white;
+  color: #000000;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buttonbox input{
+  margin-bottom: 5%
+}
+
+.topnav button{
+  font-family: Arial;
+  font-size: 15px;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  width: fit-content;
+  height: 30%;
+  padding: 5px;
+  transition: 1s;
+  border-radius: 12px; /* rounded */
+}
+
+.topnav button:hover{
+  background: white;
+  color: #000000;
+  cursor: pointer;
+}
+
+.topnav img{
+  justify-content: space-around;
+  width: 10vw;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+
+/* Below here is tabs */
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 1s;
+  font-size: 17px;
+  border-radius: 12px; /* rounded */
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: inherit;
+  color: black;
+  border: 2px solid white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid white;
+  text-align: center;
+}
+
+/* Below here is the memory test image positioning */
+
+.person {
+  border: 2px solid white;
+  height: 75%;
+  width: 100%;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.person img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+/* below for the table within the teacher portal and student end results */
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+.audiothing{
+  float: center;
+  width: auto;
+  height: auto;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 10%;
+}
+
+/* For Language selection */
+
+.imagel img{
+  width: 350px;
+  height: 250px;
+  border: 2px solid white;
+}
+
+.imagel img:hover{
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+/* For the time trial */
+
+
+.image img{
+  width: 100px;
+  height: 100px;
+  border: 2px solid white;
+}
+
+.image img:hover{
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.buttonbox2{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+ /* this is for audio buttons */
+
+.buttonbox4{
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+
+.buttonbox4 button{
+  font-family: Arial;
+  font-size: 15px;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid white;
+  width: fit-content;
+  height: 100%;
+  padding: 5px;
+  justify-content: space-between;
+  display: inline-block;
+  margin-bottom: 2.5%; /* Adjust the value as needed to create the desired gap below each button */
+  border-radius: 12px; /* rounded */
+}
+
+.buttonbox4 button:hover{
+  background: white;
+  color: #000000;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.buttonbox4 input{
+  margin-bottom: 5%
+}
+
+.maintext{
+  width: 60%;
+  height: auto;
+  float: center;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.maintext p{
+  font-size: 2.5vw;
+}
